@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root{
-    --purple : #04293A;
+    --darkblue : #04293A;
     --yellow : #ECB365;
     --white  : #ffffff;
 }
@@ -28,7 +28,7 @@ body {
     min-height: 100vh;
 }
 header{
-    background-color: var(--purple);
+    background-color: var(--darkblue);
     color: var(--yellow);
     height: 11vh;
     display: flex;
@@ -62,7 +62,7 @@ h2{
     border: 0.5px solid var(--yellow);
     width: 8rem;
     height: 8rem;
-    background-color: var(--purple);
+    background-color: var(--darkblue);
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 }
 
@@ -100,7 +100,7 @@ h2{
 }
 .pop-up-active{
     color: var(--yellow);
-    background-color: var(--purple);
+    background-color: var(--darkblue);
     height: 20vh;
     text-align: center;
     border: 2px solid var(--yellow);
@@ -110,7 +110,7 @@ h2{
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    width: 60vw;
+    width: 40rem;
     position: fixed;
     z-index: 9;
     transform: translate(-50%, -50%) scale(1);
@@ -140,9 +140,7 @@ h2{
     border-radius: 0.25rem;
     padding: 0.2rem;
 }
-.restart-btn:hover{
 
-}
 .btn-div{
     display: flex;
     justify-content: center;
@@ -167,7 +165,7 @@ h2{
     width: 40rem;
     height: max-content;
     padding: 2rem;
-    background-color: var(--purple);
+    background-color: var(--darkblue);
     text-align: center;
     border: 2px solid var(--yellow);
     top: 50%;

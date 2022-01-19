@@ -20,7 +20,7 @@ const DOM = (function() {
 	const getName = document.querySelector(".get-name");
 	let scoreX = 1;
 	let scoreO = 1;
-	let axisTurn;
+	let isTurn;
 	return{
 		board,
 		turnX,
@@ -31,7 +31,7 @@ const DOM = (function() {
 		overlay,
 		restartBtn,
 		clearBoardBtn,
-		axisTurn,
+		isTurn,
 		score1,
 		score2,
 		scoreX,
@@ -47,7 +47,7 @@ const DOM = (function() {
 })();
 function startGame() {
 	onload()
-	let axisTurn = false
+	let isTurn = false
 	formControl()
 	addPieceToBoard()
 	winninglogic()
@@ -78,7 +78,7 @@ function setNames() {
 	DOM.player2Text.textContent = DOM.player2Name.value;
 }
 function addMark (cell) {
-	const currentTurn = DOM.axisTurn ? DOM.turnO : DOM.turnX
+	const currentTurn = DOM.isTurn ? DOM.turnO : DOM.turnX
 	cell.target.classList.add(currentTurn);
 	winninglogic()
 	clearGame(currentTurn)
@@ -86,7 +86,7 @@ function addMark (cell) {
 	switchTurn()	
 }
 function switchTurn() {
-	DOM.axisTurn = !DOM.axisTurn
+	DOM.isTurn = !DOM.isTurn
 }
 function  playerXWins() {
 	DOM.winText.textContent = `Player ${DOM.player1Name.value} Wins`;
