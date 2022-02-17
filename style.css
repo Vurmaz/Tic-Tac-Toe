@@ -30,7 +30,7 @@ body {
 header {
   background-color: var(--darkblue);
   color: var(--yellow);
-  height: 11vh;
+  height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,7 +252,7 @@ footer {
   bottom: 0;
   left: 0;
   background-color: var(--darkblue);
-  height: 7vh;
+  height: 4rem;
   width: 100%;
   position: absolute;
   display: flex;
