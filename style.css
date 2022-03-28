@@ -39,6 +39,9 @@ header {
 .body {
   background-color: cornsilk;
 }
+main {
+  min-height: 100vh;
+}
 .game {
   display: flex;
   flex-direction: row;
@@ -254,7 +257,7 @@ footer {
   background-color: var(--darkblue);
   height: 4rem;
   width: 100%;
-  position: absolute;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
