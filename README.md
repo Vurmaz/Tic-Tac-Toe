@@ -9,4 +9,5 @@ Tic-Tac-Toe game
 - HTML
 
 # Demo
+<img src="https://i.imgur.com/DnFXRvn.png" width="500" />
 Project Demo : https://vurmaz.github.io/Tic-Tac-Toe/
